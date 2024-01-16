@@ -3,7 +3,7 @@ import type { FC, ReactNode } from "react";
 type Props = {
   src: string;
   maxWidth: number;
-  color: string;
+  color?: string;
   children: ReactNode;
 };
 

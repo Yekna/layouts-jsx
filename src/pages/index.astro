@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero";
+import ImageText from "../components/ImageText";
 ---
 
 <Layout title="Layouts">
   <main>
     <Hero
-      color="black"
       maxWidth={720}
       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEW7u7vz8/O2trb29vby8vLZ2dm5ubne3t7i4uK9vb21tbXb29vo6Ojh4eHW1tbBwcHKysrOzs7r6+v8+NtUAAAEGklEQVR4nO2bjW6rMAyF84fbBEqA93/Yawdou5XoDgk0tztftWpqacThJLYTgjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwDnEeF7DdFLTe2B5ydAZcLvmrIu3B4p92zZn0LZ9VOFh58+jU+Ah9T4Eew4h+P7XTYzu4llg8FZee97u2NdvS2ul2Yv7bReLQr7W3bXrrsfBjXWlXQ0KWx+8z+RScsfBjVH23HKrQKH00i7FeGhWlOZSp6SX3njc3FLcm7nkisRYvTD8ZbrxkLwpUMge+uvLeVCRXDs7/px7Yc7GmWrGi+7qdXi4pTCWv2q/ZVVuvHGS6fpYVaBbYRERayaKbS2nicBpocvv6SGLiFlE1n7U+jml23rVolshRdeHaUy0fXo0eBZXSqHgm4qJuhVGk1mD7wYyRWT8KtVd73UZB2LajsO6FRJJLuNXW4ZZpG9mTv5RfPq8PVyVKxy9Lf3Qhz4a95L0gg2P4nqgzaCrW6GZltNni7rRSMj5csDbeygzKrvaJBnBmU8ah9wr85NFReRl1rgcFCWWFoclHLVvF0sp80ff57JTb+he41Bcj+Bp5fR++TC64UWgKBkk4syHsNhW/ONp15TrLWtVaGh6WdWQ/miv+X4Up8nxutSl9Za1KnTj5ooL+2UbKmOuRBaa5xbxveYWc/1SW5eSFZlxzf3P5y0ql4TyVMpqVBildnFNWUzaRgo5R69zjtwPaQ5ED0s1Kiw25KWk3uqpxcibZI7nvslFK9c+t1gSCun2kCKV06r00zC/hT6nrwWC/EbqO/ec/DUqlESXy7yo2ktn9Tyvemqi5P9Sp3MP1q2QLYxTTdzmcJTQYqhbTV/qu9lIjQqZvhpknpDlC9vKEgBJcBrXDixFwEW6+jyoFSrka/+jWxihpMfQczYU34NfFcp/dlxShkaFZl1++RlhGsnl1PingSv3P7qhFDoqFebws9tQy9RKMkfK4RF7w3KXRhKKOoXSRzlk7LCw4Jut33jfZBOTKoUpU0yPkLFD4nYB5HkqokyhBMXJ7xYYKteEJ8bKFHJ2m5cudgr0tfIgtE7XOEyROGTYasFWtbBWw/pGm4fzvbDDkOUbXQoTDYduV9CocFeyf0OFzrRHClSpsPlwD6WXHjkQoRAKoRAKNxSawxVqq9rcsfnQWm2Vt6PLwQovpEthkowfjsPqm1vQePD+51GPh8veRDc0/XE0g1O1N9F2yRhyBz6I4MgYNftL5z3CyTk6cI8wt5U07RGWfd6HbvOWjd569nmve/Xt/6PHDqyavfqf/7zFH3hm5i889/Txz659/vOHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6Rf+GFS5pjKqisAAAAAElFTkSuQmCC"
     >
@@ -22,6 +22,20 @@ import Hero from "../components/Hero";
         Neque fugiat atque quam iste.
       </p>
     </Hero>
+    <ImageText
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEW7u7vz8/O2trb29vby8vLZ2dm5ubne3t7i4uK9vb21tbXb29vo6Ojh4eHW1tbBwcHKysrOzs7r6+v8+NtUAAAEGklEQVR4nO2bjW6rMAyF84fbBEqA93/Yawdou5XoDgk0tztftWpqacThJLYTgjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwDnEeF7DdFLTe2B5ydAZcLvmrIu3B4p92zZn0LZ9VOFh58+jU+Ah9T4Eew4h+P7XTYzu4llg8FZee97u2NdvS2ul2Yv7bReLQr7W3bXrrsfBjXWlXQ0KWx+8z+RScsfBjVH23HKrQKH00i7FeGhWlOZSp6SX3njc3FLcm7nkisRYvTD8ZbrxkLwpUMge+uvLeVCRXDs7/px7Yc7GmWrGi+7qdXi4pTCWv2q/ZVVuvHGS6fpYVaBbYRERayaKbS2nicBpocvv6SGLiFlE1n7U+jml23rVolshRdeHaUy0fXo0eBZXSqHgm4qJuhVGk1mD7wYyRWT8KtVd73UZB2LajsO6FRJJLuNXW4ZZpG9mTv5RfPq8PVyVKxy9Lf3Qhz4a95L0gg2P4nqgzaCrW6GZltNni7rRSMj5csDbeygzKrvaJBnBmU8ah9wr85NFReRl1rgcFCWWFoclHLVvF0sp80ff57JTb+he41Bcj+Bp5fR++TC64UWgKBkk4syHsNhW/ONp15TrLWtVaGh6WdWQ/miv+X4Up8nxutSl9Za1KnTj5ooL+2UbKmOuRBaa5xbxveYWc/1SW5eSFZlxzf3P5y0ql4TyVMpqVBildnFNWUzaRgo5R69zjtwPaQ5ED0s1Kiw25KWk3uqpxcibZI7nvslFK9c+t1gSCun2kCKV06r00zC/hT6nrwWC/EbqO/ec/DUqlESXy7yo2ktn9Tyvemqi5P9Sp3MP1q2QLYxTTdzmcJTQYqhbTV/qu9lIjQqZvhpknpDlC9vKEgBJcBrXDixFwEW6+jyoFSrka/+jWxihpMfQczYU34NfFcp/dlxShkaFZl1++RlhGsnl1PingSv3P7qhFDoqFebws9tQy9RKMkfK4RF7w3KXRhKKOoXSRzlk7LCw4Jut33jfZBOTKoUpU0yPkLFD4nYB5HkqokyhBMXJ7xYYKteEJ8bKFHJ2m5cudgr0tfIgtE7XOEyROGTYasFWtbBWw/pGm4fzvbDDkOUbXQoTDYduV9CocFeyf0OFzrRHClSpsPlwD6WXHjkQoRAKoRAKNxSawxVqq9rcsfnQWm2Vt6PLwQovpEthkowfjsPqm1vQePD+51GPh8veRDc0/XE0g1O1N9F2yRhyBz6I4MgYNftL5z3CyTk6cI8wt5U07RGWfd6HbvOWjd569nmve/Xt/6PHDqyavfqf/7zFH3hm5i889/Txz659/vOHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6Rf+GFS5pjKqisAAAAAElFTkSuQmCC"
+      alt="placeholder"
+    >
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+        distinctio.
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum in iure
+        qui sequi quidem, tempore amet quis veritatis adipisci? Laboriosam ut
+        ipsa doloribus fugit, quaerat ex minus tempore id voluptatem!
+      </p>
+    </ImageText>
   </main>
 </Layout>
 
@@ -35,8 +49,10 @@ import Hero from "../components/Hero";
     width: calc(100% - 2rem);
     /* max-width: calc(100% - 2rem); */
     max-width: 1280px;
-    color: white;
+    color: black;
     font-size: 20px;
     line-height: 1.6;
+	display: grid;
+	gap: 1rem;
   }
 </style>
