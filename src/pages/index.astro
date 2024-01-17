@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero";
 import ImageText from "../components/ImageText";
+import TextText from "../components/TextText";
+import ImageImage from "../components/ImageImage";
+import CallToAction from "../components/CallToAction";
 ---
 
 <Layout title="Layouts">
@@ -36,6 +39,63 @@ import ImageText from "../components/ImageText";
         ipsa doloribus fugit, quaerat ex minus tempore id voluptatem!
       </p>
     </ImageText>
+    <TextText columns={2}>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores neque
+        dicta illo voluptates. Necessitatibus, quas quae explicabo, unde, odio
+        nihil accusamus id accusantium rerum voluptatem blanditiis saepe?
+        Corporis, inventore eos!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod,
+        explicabo.
+      </p>
+    </TextText>
+    <TextText columns={3}>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores neque
+        dicta illo voluptates. Necessitatibus, quas quae explicabo, unde, odio
+        nihil accusamus id accusantium rerum voluptatem blanditiis saepe?
+        Corporis, inventore eos!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod,
+        explicabo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, rerum
+        officiis! Voluptate, veritatis consequatur voluptates iste pariatur qui.
+        Ab maxime quisquam illum voluptatem qui aspernatur quasi a, velit, nisi
+        voluptas atque beatae dignissimos assumenda sunt?
+      </p>
+    </TextText>
+    <ImageImage
+      columns={2}
+      images={[
+        {
+          src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEW7u7vz8/O2trb29vby8vLZ2dm5ubne3t7i4uK9vb21tbXb29vo6Ojh4eHW1tbBwcHKysrOzs7r6+v8+NtUAAAEGklEQVR4nO2bjW6rMAyF84fbBEqA93/Yawdou5XoDgk0tztftWpqacThJLYTgjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwDnEeF7DdFLTe2B5ydAZcLvmrIu3B4p92zZn0LZ9VOFh58+jU+Ah9T4Eew4h+P7XTYzu4llg8FZee97u2NdvS2ul2Yv7bReLQr7W3bXrrsfBjXWlXQ0KWx+8z+RScsfBjVH23HKrQKH00i7FeGhWlOZSp6SX3njc3FLcm7nkisRYvTD8ZbrxkLwpUMge+uvLeVCRXDs7/px7Yc7GmWrGi+7qdXi4pTCWv2q/ZVVuvHGS6fpYVaBbYRERayaKbS2nicBpocvv6SGLiFlE1n7U+jml23rVolshRdeHaUy0fXo0eBZXSqHgm4qJuhVGk1mD7wYyRWT8KtVd73UZB2LajsO6FRJJLuNXW4ZZpG9mTv5RfPq8PVyVKxy9Lf3Qhz4a95L0gg2P4nqgzaCrW6GZltNni7rRSMj5csDbeygzKrvaJBnBmU8ah9wr85NFReRl1rgcFCWWFoclHLVvF0sp80ff57JTb+he41Bcj+Bp5fR++TC64UWgKBkk4syHsNhW/ONp15TrLWtVaGh6WdWQ/miv+X4Up8nxutSl9Za1KnTj5ooL+2UbKmOuRBaa5xbxveYWc/1SW5eSFZlxzf3P5y0ql4TyVMpqVBildnFNWUzaRgo5R69zjtwPaQ5ED0s1Kiw25KWk3uqpxcibZI7nvslFK9c+t1gSCun2kCKV06r00zC/hT6nrwWC/EbqO/ec/DUqlESXy7yo2ktn9Tyvemqi5P9Sp3MP1q2QLYxTTdzmcJTQYqhbTV/qu9lIjQqZvhpknpDlC9vKEgBJcBrXDixFwEW6+jyoFSrka/+jWxihpMfQczYU34NfFcp/dlxShkaFZl1++RlhGsnl1PingSv3P7qhFDoqFebws9tQy9RKMkfK4RF7w3KXRhKKOoXSRzlk7LCw4Jut33jfZBOTKoUpU0yPkLFD4nYB5HkqokyhBMXJ7xYYKteEJ8bKFHJ2m5cudgr0tfIgtE7XOEyROGTYasFWtbBWw/pGm4fzvbDDkOUbXQoTDYduV9CocFeyf0OFzrRHClSpsPlwD6WXHjkQoRAKoRAKNxSawxVqq9rcsfnQWm2Vt6PLwQovpEthkowfjsPqm1vQePD+51GPh8veRDc0/XE0g1O1N9F2yRhyBz6I4MgYNftL5z3CyTk6cI8wt5U07RGWfd6HbvOWjd569nmve/Xt/6PHDqyavfqf/7zFH3hm5i889/Txz659/vOHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6Rf+GFS5pjKqisAAAAAElFTkSuQmCC",
+          alt: "placeholder",
+        },
+        {
+          src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEW7u7vz8/O2trb29vby8vLZ2dm5ubne3t7i4uK9vb21tbXb29vo6Ojh4eHW1tbBwcHKysrOzs7r6+v8+NtUAAAEGklEQVR4nO2bjW6rMAyF84fbBEqA93/Yawdou5XoDgk0tztftWpqacThJLYTgjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwDnEeF7DdFLTe2B5ydAZcLvmrIu3B4p92zZn0LZ9VOFh58+jU+Ah9T4Eew4h+P7XTYzu4llg8FZee97u2NdvS2ul2Yv7bReLQr7W3bXrrsfBjXWlXQ0KWx+8z+RScsfBjVH23HKrQKH00i7FeGhWlOZSp6SX3njc3FLcm7nkisRYvTD8ZbrxkLwpUMge+uvLeVCRXDs7/px7Yc7GmWrGi+7qdXi4pTCWv2q/ZVVuvHGS6fpYVaBbYRERayaKbS2nicBpocvv6SGLiFlE1n7U+jml23rVolshRdeHaUy0fXo0eBZXSqHgm4qJuhVGk1mD7wYyRWT8KtVd73UZB2LajsO6FRJJLuNXW4ZZpG9mTv5RfPq8PVyVKxy9Lf3Qhz4a95L0gg2P4nqgzaCrW6GZltNni7rRSMj5csDbeygzKrvaJBnBmU8ah9wr85NFReRl1rgcFCWWFoclHLVvF0sp80ff57JTb+he41Bcj+Bp5fR++TC64UWgKBkk4syHsNhW/ONp15TrLWtVaGh6WdWQ/miv+X4Up8nxutSl9Za1KnTj5ooL+2UbKmOuRBaa5xbxveYWc/1SW5eSFZlxzf3P5y0ql4TyVMpqVBildnFNWUzaRgo5R69zjtwPaQ5ED0s1Kiw25KWk3uqpxcibZI7nvslFK9c+t1gSCun2kCKV06r00zC/hT6nrwWC/EbqO/ec/DUqlESXy7yo2ktn9Tyvemqi5P9Sp3MP1q2QLYxTTdzmcJTQYqhbTV/qu9lIjQqZvhpknpDlC9vKEgBJcBrXDixFwEW6+jyoFSrka/+jWxihpMfQczYU34NfFcp/dlxShkaFZl1++RlhGsnl1PingSv3P7qhFDoqFebws9tQy9RKMkfK4RF7w3KXRhKKOoXSRzlk7LCw4Jut33jfZBOTKoUpU0yPkLFD4nYB5HkqokyhBMXJ7xYYKteEJ8bKFHJ2m5cudgr0tfIgtE7XOEyROGTYasFWtbBWw/pGm4fzvbDDkOUbXQoTDYduV9CocFeyf0OFzrRHClSpsPlwD6WXHjkQoRAKoRAKNxSawxVqq9rcsfnQWm2Vt6PLwQovpEthkowfjsPqm1vQePD+51GPh8veRDc0/XE0g1O1N9F2yRhyBz6I4MgYNftL5z3CyTk6cI8wt5U07RGWfd6HbvOWjd569nmve/Xt/6PHDqyavfqf/7zFH3hm5i889/Txz659/vOHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6Rf+GFS5pjKqisAAAAAElFTkSuQmCC",
+          alt: "placeholder",
+        },
+      ]}
+    />
+    <CallToAction
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEW7u7vz8/O2trb29vby8vLZ2dm5ubne3t7i4uK9vb21tbXb29vo6Ojh4eHW1tbBwcHKysrOzs7r6+v8+NtUAAAEGklEQVR4nO2bjW6rMAyF84fbBEqA93/Yawdou5XoDgk0tztftWpqacThJLYTgjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwDnEeF7DdFLTe2B5ydAZcLvmrIu3B4p92zZn0LZ9VOFh58+jU+Ah9T4Eew4h+P7XTYzu4llg8FZee97u2NdvS2ul2Yv7bReLQr7W3bXrrsfBjXWlXQ0KWx+8z+RScsfBjVH23HKrQKH00i7FeGhWlOZSp6SX3njc3FLcm7nkisRYvTD8ZbrxkLwpUMge+uvLeVCRXDs7/px7Yc7GmWrGi+7qdXi4pTCWv2q/ZVVuvHGS6fpYVaBbYRERayaKbS2nicBpocvv6SGLiFlE1n7U+jml23rVolshRdeHaUy0fXo0eBZXSqHgm4qJuhVGk1mD7wYyRWT8KtVd73UZB2LajsO6FRJJLuNXW4ZZpG9mTv5RfPq8PVyVKxy9Lf3Qhz4a95L0gg2P4nqgzaCrW6GZltNni7rRSMj5csDbeygzKrvaJBnBmU8ah9wr85NFReRl1rgcFCWWFoclHLVvF0sp80ff57JTb+he41Bcj+Bp5fR++TC64UWgKBkk4syHsNhW/ONp15TrLWtVaGh6WdWQ/miv+X4Up8nxutSl9Za1KnTj5ooL+2UbKmOuRBaa5xbxveYWc/1SW5eSFZlxzf3P5y0ql4TyVMpqVBildnFNWUzaRgo5R69zjtwPaQ5ED0s1Kiw25KWk3uqpxcibZI7nvslFK9c+t1gSCun2kCKV06r00zC/hT6nrwWC/EbqO/ec/DUqlESXy7yo2ktn9Tyvemqi5P9Sp3MP1q2QLYxTTdzmcJTQYqhbTV/qu9lIjQqZvhpknpDlC9vKEgBJcBrXDixFwEW6+jyoFSrka/+jWxihpMfQczYU34NfFcp/dlxShkaFZl1++RlhGsnl1PingSv3P7qhFDoqFebws9tQy9RKMkfK4RF7w3KXRhKKOoXSRzlk7LCw4Jut33jfZBOTKoUpU0yPkLFD4nYB5HkqokyhBMXJ7xYYKteEJ8bKFHJ2m5cudgr0tfIgtE7XOEyROGTYasFWtbBWw/pGm4fzvbDDkOUbXQoTDYduV9CocFeyf0OFzrRHClSpsPlwD6WXHjkQoRAKoRAKNxSawxVqq9rcsfnQWm2Vt6PLwQovpEthkowfjsPqm1vQePD+51GPh8veRDc0/XE0g1O1N9F2yRhyBz6I4MgYNftL5z3CyTk6cI8wt5U07RGWfd6HbvOWjd569nmve/Xt/6PHDqyavfqf/7zFH3hm5i889/Txz659/vOHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6Rf+GFS5pjKqisAAAAAElFTkSuQmCC"
+      maxWidth={720}
+    >
+      <h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, omnis?
+      </h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora nam
+        fuga necessitatibus corrupti inventore voluptatem dolore magnam et
+        accusantium dicta.
+      </p>
+      <button class="bg-red-50">Submit</button>
+    </CallToAction>
   </main>
 </Layout>
 
@@ -52,7 +112,7 @@ import ImageText from "../components/ImageText";
     color: black;
     font-size: 20px;
     line-height: 1.6;
-	display: grid;
-	gap: 1rem;
+    display: grid;
+    gap: 2rem;
   }
 </style>
